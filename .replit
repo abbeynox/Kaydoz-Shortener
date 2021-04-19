@@ -1,0 +1,7 @@
+run="nodejs index.js"
+language="nodejs"
+onBoot="echo Booting up!"
+
+[packager]
+afterInstall="date >> package_install_log"
+ignoredPaths=[".git"]
